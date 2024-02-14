@@ -71,7 +71,7 @@ const showPhoneDetails = (phone) => {
   <p><b>Slug: </b><span>${phone?.slug}</span></p>
   <p><b>Release Date: </b><span>${phone?.releaseDate}</span></p>
   <p><b>Brand: </b><span>${phone?.brand}</span></p>
-  <p><b>GPS: </b><span>${phone?.others?.GPS}</span></p>
+  <p><b>GPS: </b><span>${phone?.others?.GPS || "No GPS Available"}</span></p>
   `;
   show_details_modal.showModal();
   console.log(phone);
